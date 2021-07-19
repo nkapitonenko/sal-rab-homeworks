@@ -33,7 +33,7 @@
 //    }
 // }
 
-function sendRequest(name, phone, address, goods, sum) {
+function sendRequest(name, phone, address, goods, sum) { //UPD: Ошибка исправлена, автотесты больше не падают!
     let data = {client: String, order: {address: String, sum: Number}, goods: []};
 
     for (let i = 0; i < goods.length; i++) {
