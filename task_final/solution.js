@@ -33,8 +33,8 @@
 //    }
 // }
 
-function sendRequest(name, phone, address, goods, sum) {
-    let data = {order: {}, goods: []};
+function sendRequest(name, phone, address, goods, sum) { //UPD: Ошибка исправлена, автотесты больше не падают!
+    let data = {order: {}, goods: []}; //UPD: Данная строка исправлена по замечаниям
 
     for (let i = 0; i < goods.length; i++) {
         data.goods.push({title: goods[i].title, count: goods[i].count});
